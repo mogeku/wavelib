@@ -42,6 +42,11 @@ if(NOT POW_FUNCTION_EXISTS AND NOT NEED_LINKING_AGAINST_LIBM)
     endif()
 endif()
 
+set_target_properties(wavelib PROPERTIES
+		MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+		)
+
+
 if(NEED_LINKING_AGAINST_LIBM)
     target_link_libraries(wavelib PUBLIC m)
 endif()
@@ -57,5 +62,4 @@ install(TARGETS wavelib
 
 install(EXPORT wavelib-targets
     FILE wavelib-config.cmake
-    NAMESPACE wavelib::
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/wavelib)
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake)

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\3th_github\wavelib\cmake-build-release--x64\CMakeFiles\5a3b8c3bf3441fcd4ce9e51aaf3011ff\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{22EC5025-EE1D-38E4-987E-AC78F92E5067}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

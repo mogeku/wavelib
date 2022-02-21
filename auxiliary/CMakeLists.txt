@@ -8,6 +8,12 @@ set(HEADER_FILES waux.h)
 
 add_library(wauxlib STATIC ${SOURCE_FILES} ${HEADER_FILES})
 
+set_target_properties(wauxlib PROPERTIES
+		MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+		)
+set_property(TARGET wavelib PROPERTY
+		MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
 target_link_libraries(wauxlib wavelib)
 
 set_property(TARGET wauxlib PROPERTY FOLDER "lib")

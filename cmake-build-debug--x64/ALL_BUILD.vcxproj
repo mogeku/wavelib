@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C2D0CF6A-D255-364F-B2DE-A0BED99A8276}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\3th_github\wavelib\header;E:\Project\3th_github\wavelib\cmake-build-debug--x64\Bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\3th_github\wavelib\header;E:\Project\3th_github\wavelib\cmake-build-debug--x64\Bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\3th_github\wavelib\header;E:\Project\3th_github\wavelib\cmake-build-debug--x64\Bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Project\3th_github\wavelib\header;E:\Project\3th_github\wavelib\cmake-build-debug--x64\Bin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Project\3th_github\wavelib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Project/3th_github/wavelib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -SE:/Project/3th_github/wavelib -BE:/Project/3th_github/wavelib/cmake-build-debug--x64 --check-stamp-file E:/Project/3th_github/wavelib/cmake-build-debug--x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeRCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\GNUInstallDirs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Project/3th_github/wavelib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -SE:/Project/3th_github/wavelib -BE:/Project/3th_github/wavelib/cmake-build-debug--x64 --check-stamp-file E:/Project/3th_github/wavelib/cmake-build-debug--x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeRCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\GNUInstallDirs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Project/3th_github/wavelib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -SE:/Project/3th_github/wavelib -BE:/Project/3th_github/wavelib/cmake-build-debug--x64 --check-stamp-file E:/Project/3th_github/wavelib/cmake-build-debug--x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeRCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\GNUInstallDirs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Project/3th_github/wavelib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -SE:/Project/3th_github/wavelib -BE:/Project/3th_github/wavelib/cmake-build-debug--x64 --check-stamp-file E:/Project/3th_github/wavelib/cmake-build-debug--x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeRCInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\GNUInstallDirs.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\Windows.cmake;E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeRCCompiler.cmake;E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\3.20.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Project\3th_github\wavelib\cmake-build-debug--x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Project\3th_github\wavelib\cmake-build-debug--x64\ZERO_CHECK.vcxproj">
+      <Project>{27FD36A5-8A30-31E6-AAD7-E3B4AC6F3070}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Project\3th_github\wavelib\cmake-build-debug--x64\auxiliary\wauxlib.vcxproj">
+      <Project>{C95CA57F-B2A7-362D-AF02-0B886E9DF539}</Project>
+      <Name>wauxlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Project\3th_github\wavelib\cmake-build-debug--x64\src\wavelib.vcxproj">
+      <Project>{5E77CC46-1CE4-3587-A757-7AA326A333CC}</Project>
+      <Name>wavelib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
